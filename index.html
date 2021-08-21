@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac Book pro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Start Main Section -->
+    <section class="main-area mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Product Preview Area -->
+          <div class="col-md-6">
+            <div class="single-product">
+              <img src="images/mac.png" class="w-100" alt="" />
+            </div>
+          </div>
+
+          <!-- Single Product Details area -->
+          <div class="col-md-6">
+            <div class="product-details">
+              <h2>
+                Apple M1 Chip with 8-Core CPU and 8-Core GPU 512GB Storage
+              </h2>
+              <p class="description">
+                Now when you shop at Apple, you can use Apple Card to pay
+                monthly at 0% APR.Footnote◊ Just choose Apple Card Monthly
+                Installments as your payment option when you check out. And
+                you'll get 3% Daily Cash back on the Apple products you love —
+                all up front. Apply in minutes to see if you are approved with
+                no impact to your credit score.Footnote1
+              </p>
+
+              <!-- Start of memory section -->
+              <div class="memory mb-5">
+                <h6 class="d-block">Memory</h6>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="First group"
+                  >
+                    <button
+                      type="button"
+                      id="default-memory"
+                      class="btn btn-outline-secondary"
+                    >
+                      8GB unified memory
+                    </button>
+                  </div>
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Second group"
+                  >
+                    <button
+                      type="button"
+                      id="extra-memory"
+                      class="btn btn-outline-secondary"
+                    >
+                      16GB unified memory
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- End of memory section -->
+
+              <!-- Start of storage section -->
+              <div class="storage mb-5">
+                <h6 class="d-block">Storage</h6>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="First group"
+                  >
+                    <button
+                      type="button"
+                      id="storage-256gb"
+                      class="btn btn-outline-secondary"
+                    >
+                      256GB SSD storage
+                    </button>
+                  </div>
+
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Second group"
+                  >
+                    <button
+                      type="button"
+                      id="storage-512gb"
+                      class="btn btn-outline-secondary"
+                    >
+                      512GB SSD storage
+                    </button>
+                  </div>
+
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Second group"
+                  >
+                    <button
+                      type="button"
+                      id="storage-1tb"
+                      class="btn btn-outline-secondary"
+                    >
+                      1TB SSD storage
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- End of storage section -->
+
+              <!-- Start of delivery section -->
+              <div class="delivery mb-5">
+                <h6 class="d-block">Chose your delivery option</h6>
+
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="First group"
+                  >
+                    <button
+                      type="button"
+                      id="free-delivery"
+                      class="btn btn-outline-secondary"
+                    >
+                      Friday, Aug 25 FREE Prime Delivery
+                    </button>
+                  </div>
+
+                  <div
+                    class="btn-group me-2"
+                    role="group"
+                    aria-label="Second group"
+                  >
+                    <button
+                      type="button"
+                      id="extra-charge"
+                      class="btn btn-outline-secondary"
+                    >
+                      Friday, Aug 21 Delivery Charge &dollar;20
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- End of delivery section -->
+
+              <!-- Start of price Section -->
+              <table class="table w-50">
+                <tbody>
+                  <tr>
+                    <td scope="col">Best Price</td>
+                    <td scope="col">
+                      &dollar;
+                      <span id="best-price">1299</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="col">Extra Memory Cost</td>
+                    <td scope="col">
+                      &dollar;
+                      <span id="extra-memmory">0</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td scope="col">Extra Storage Cost</td>
+                    <td scope="col">
+                      &dollar;
+                      <span id="extra-storage">0</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td scope="col">Delivery Caharge</td>
+                    <td scope="col">
+                      &dollar;
+                      <span id="delivery-charge">0</span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="col fw-bold">Total Price</th>
+                    <th scope="col fw-bold">
+                      &dollar;
+                      <span id="total-price">1299</span>
+                    </th>
+                  </tr>
+                </tfoot>
+              </table>
+              <!-- End of price Section -->
+
+              <!-- Start of promo code -->
+              <h6 class="d-block">Add promo code</h6>
+              <span class="d-block text-danger" id="promo-erro"></span>
+              <div class="input-group mb-3 w-50">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                  id="promo-code"
+                />
+                <button class="btn btn-danger" type="button" id="user-promo">
+                  Apply
+                </button>
+              </div>
+              <!-- End of promo code -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Section -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr />
+            <h3 class="text-center">
+              Total Price: &dollar;<span id="finalPrice">1299</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
