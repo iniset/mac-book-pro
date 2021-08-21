@@ -135,7 +135,7 @@ function managePromoCode() {
 
       const getTotalPrice = parseInt(totalPrice.innerText);
       const updatedTotal = getTotalPrice - (getTotalPrice * 20) / 100;
-      totalPrice.innerText = updatedTotal;
+      
       finalPrice.innerText = updatedTotal;
     } else {
       promoErro.innerText = "Please provied valid promo code";
